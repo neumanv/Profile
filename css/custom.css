@@ -1,0 +1,77 @@
+/* PERSONALIZADO */
+
+:root {
+    --fondo: #e1e1e1;
+    --columna: #2e3e4a;
+}
+
+@font-face {
+    font-family: "Varela";
+    src: url(/font/VarelaRound-Regular.ttf);
+}
+
+/* GENERAL */
+
+body{
+    background-color: var(--fondo);
+    font-family: "Varela";
+}
+
+.titulo{
+    font-size: 2em;
+    margin: 0;
+    padding-left: 10px;
+    color: black;
+}
+
+.completa{
+    width: 1em;
+    height: auto;
+    float: right;
+}
+
+.container{
+    margin-top: 5rem;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "aside article";
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: var(--columna);
+    color: white;
+    border-radius: 10px;
+}
+
+.foto{
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+article{
+    grid-area: article;
+    margin: 5%;
+}
+
+.apartado{
+    margin-left: 10px;
+    color: white;
+    background-color: var(--columna);
+    width: 40%;
+}
+
+.intro{
+    margin: 5%;
+    text-align: center;
+}
