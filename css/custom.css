@@ -30,6 +30,14 @@ body{
     color: black;
 }
 
+.titulo :hover{
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    padding-left: 10px;
+    color: black;
+}
+
 .completa{
     width: 1em;
     height: auto;

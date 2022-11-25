@@ -14,27 +14,27 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg ff-gen bg-secondary p-1">
+        <nav class="navbar navbar-expand ff-gen bg-secondary p-1">
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="titulo nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p class="titulo nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                             CURRICULUM PROFESIONAL
-                        </a>
+                        </p>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Formulario</a></li>
-                            <li><a onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
+                            <li><a class="dropdown-item" href="formulario.html">Formulario</a></li>
+                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            </div>
         </nav>
     </header>
     <div class="container">
+        <!-- PARTE IZQUIERDA -->
         <aside>
             <div class="col-img">
-                <img class="foto" src="/img/vini.png">
+                <img class="foto" src="/img/pfp.jpg">
             </div>
             <hr>
             <p class="sobre-mi">Hola, soy Guillermo Neuman, desarrollador web. Tengo 19 años y nací en Sevilla (España)
@@ -57,6 +57,7 @@
                 <li class="url-red">Bootstrap</li>
                 <li class="url-red">CSS</li>
                 <li class="url-red">PHP</li>
+                <li class="url-red">WordPress</li>
                 <li class="url-red">MySQL</li>
                 <li class="url-red">Inglés</li>
                 <li class="url-red">Java</li>
@@ -83,9 +84,13 @@
                     <div class="carousel-item">
                         <img src="img/mysql.png" class="d-block w-100">
                     </div>
+                    <div class="carousel-item">
+                        <img src="img/wordpress.png" class="d-block w-100">
+                    </div>
                 </div>
             </div>
         </aside>
+        <!-- PARTE DERECHA -->
         <article>
             <h1 class="text-primary">AUGUSTO GUILLERMO<br>NEUMAN VERA</h1>
             <h4>DESARROLLADOR WEB</h4>
@@ -136,6 +141,12 @@
                     de YouTube, los coches o ver partidos de fútbol, conocer nuevas culturas y aprender idiomas.
                 </p>
             </div>
+            <div class="apartado">
+                <h3 class="intro text-center">EXTRAS</h3>
+                <p>Cuento con el carnet de conducir tipo B, con disponibilidad de desplazamiento. También asistí
+                    al evento de WordPress organizado en Sevilla (WordCamp22).
+                </p>
+            </div>
         </article>
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-black">
@@ -148,7 +159,14 @@
         document.oncontextmenu = function () {
             return false
         }
+        //------------------------------------------------------  
+
+
+        document.addEventListener("copy", function (event) {
+            //AL COPIAR EL TEXTO MUESTRA EL SIGUIENTE MENSAJE
+            event.clipboardData.setData("text/plain", "No se puede copiar");
+            event.preventDefault();
+        }, false);
     </script>
 </body>
-
 </html>

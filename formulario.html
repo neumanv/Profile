@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand ff-gen bg-secondary p-1">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <p class="titulo nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            FORMULARIO
+                        </p>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Curriculum</a></li>
+                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script type='text/javascript'>
+        //NO CLICK DERECHO
+        document.oncontextmenu = function () {
+            return false
+        }
+    </script>
+</body>
+</html>

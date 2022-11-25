@@ -2,24 +2,10 @@
 
 //------------- PANTALLA COMPLETA ---------------------------------------------
 
-//activa la pantalla completa
+//activa la pantalla completa (se desactiva con la tecla ESC)
 function pantallaCompleta(element){
 
     if(element.webkitRequestFullScreen){
         element.webkitRequestFullScreen();
-    }
-}
-
-//quita la pantalla completa
-function pantallaNormal(){
-
-    if(document.cancelFullScreen){
-        document.cancelFullScreen();
-
-    }else if(document.mozCancelFullScreen){
-        document.mozCancelFullScreen();
-
-    }else if(document.webkitCancelFullScreen){
-        document.webkitCancelFullScreen();
     }
 }
