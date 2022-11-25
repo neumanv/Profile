@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,21 @@
 </head>
 <body>
     <header>
-        <nav class="bg-secondary p-1">
-            <h1 class="titulo">CURRICULUM VITAE
-            <a onclick="pantallaCompleta(document.documentElement);"><img src="/icons/full-screen.png" class="completa mt-1"></a></h1>
+        <nav class="navbar navbar-expand-lg ff-gen bg-secondary p-1">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="titulo nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CURRICULUM PROFESIONAL
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Formulario</a></li>
+                            <li><a onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -28,37 +41,66 @@
                 el 28 de abril del año 2003.
             </p>
             <div class="apartado-izq bg-white">
-                <h3>REDES</h3>
+                <h3 class="text-center">REDES</h3>
             </div>
-            <p><a class="url-red" href="https://www.linkedin.com/in/a-g-neuman-04a664222/"><i class="bi bi-linkedin"></i> Linkedin</a><br></p>
+            <p><a class="url-red" href="https://www.linkedin.com/in/a-g-neuman-04a664222/"><i
+                        class="bi bi-linkedin"></i> Linkedin</a><br></p>
             <p><a class="url-red" href="https://github.com/neumanv"> Github</a></p>
             <p class="url-red"> +34 677 727 77 77</p>
             <p class="url-red"> guillermoanv25@gmail.com</p>
             <div class="apartado-izq bg-white">
-                <h3>SKILLS</h3>
+                <h3 class="text-center">SKILLS</h3>
             </div>
             <ul>
                 <li class="url-red">JavaScript</li>
                 <li class="url-red">HTML</li>
                 <li class="url-red">Bootstrap</li>
                 <li class="url-red">CSS</li>
+                <li class="url-red">PHP</li>
+                <li class="url-red">MySQL</li>
                 <li class="url-red">Inglés</li>
                 <li class="url-red">Java</li>
                 <li class="url-red">Buen manejo de tecnologías</li>
             </ul>
+            <!-- CARRUSEL -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/java.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/php.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/js.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bootstrap5.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/html-css.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mysql.png" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
         </aside>
         <article>
             <h1 class="text-primary">AUGUSTO GUILLERMO<br>NEUMAN VERA</h1>
-            <h4>DESARROLLADOR WEB</h4><hr>
+            <h4>DESARROLLADOR WEB</h4>
+            <hr>
             <div class="apartado">
-                <h3 class="intro">DESCRIPCIÓN</h3>
+                <h3 class="intro text-center">DESCRIPCIÓN</h3>
             </div>
-            <p>Soy profesional, responsable y eficiente en busca de un puesto como desarrollador front-end. Mi objetivo es obtener 
-                experiencia en el área de desarrollo web y poder ofrecer una experiencia de visita personalizada y de 
-                gran calidad al cliente. Cuento con habilidades de cara a la comunicación, al trabajo en equipo y al aprendizaje rápido.
+            <p>Soy profesional, responsable y eficiente en busca de un puesto como desarrollador front-end. Mi objetivo
+                es obtener
+                experiencia en el área de desarrollo web y poder ofrecer una experiencia de visita personalizada y de
+                gran calidad al cliente. Cuento con habilidades de cara a la comunicación, al trabajo en equipo y al
+                aprendizaje rápido.
             </p>
             <div class="apartado">
-                <h3 class="intro">FORMACIÓN</h3>
+                <h3 class="intro text-center">FORMACIÓN</h3>
             </div>
             <div class="escuela">
                 BACHILLERATO CCSS & HUMANIDADES
@@ -78,24 +120,35 @@
             <p>B1 Cambridge
             </p>
             <div class="apartado">
-                <h3 class="intro">EXPERIENCIA</h3>
-                <p>No tengo experiencia laboral, pero tengo ganas de tenerla y de poder ver lo que es tener un trabajo en el que me
-                    gusta lo que hago. En base a lo que he estudiado, aprendo rápido sobre el tema. Me gusta el trabajo con mis
-                    compañeros programando, que me ayuda a aprender cosas nuevas o a aprender a hacer cosas que ya se pero de diferentes formas.
+                <h3 class="intro text-center">EXPERIENCIA</h3>
+                <p>No tengo experiencia laboral, pero tengo ganas de tenerla y de poder ver lo que es tener un trabajo
+                    en el que me
+                    gusta lo que hago. En base a lo que he estudiado, aprendo rápido sobre el tema. Me gusta el trabajo
+                    con mis
+                    compañeros programando, que me ayuda a aprender cosas nuevas o a aprender a hacer cosas que ya se
+                    pero de diferentes formas.
                 </p>
             </div>
             <div class="apartado">
-                <h3 class="intro">HOBBIES</h3>
-                <p>En mi tiempo libre me gusta jugar a videojuegos, salir con mis amigos, practicar algún deporte... También me gusta ver videos 
+                <h3 class="intro text-center">HOBBIES</h3>
+                <p>En mi tiempo libre me gusta jugar a videojuegos, salir con mis amigos, practicar algún deporte...
+                    También me gusta ver videos
                     de YouTube, los coches o ver partidos de fútbol, conocer nuevas culturas y aprender idiomas.
                 </p>
             </div>
         </article>
     </div>
-    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-white">
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-black">
         <div class="text-center">
             <small>Copyright &copy; neumanv</small>
         </div>
     </footer>
+    <script type='text/javascript'>
+        //NO CLICK DERECHO
+        document.oncontextmenu = function () {
+            return false
+        }
+    </script>
 </body>
+
 </html>

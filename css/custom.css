@@ -25,6 +25,7 @@ body{
 .titulo{
     font-size: 2em;
     margin: 0;
+    font-weight: bold;
     padding-left: 10px;
     color: black;
 }
@@ -33,6 +34,15 @@ body{
     width: 1em;
     height: auto;
     float: right;
+}
+
+.dropdown-menu{
+    padding: 0;
+}
+
+.dropdown-item :hover{
+    background-color: white;
+    cursor: pointer;
 }
 
 .container{
@@ -47,6 +57,8 @@ body{
     grid-gap: 10px;
     padding: 20px;
 }
+
+/* PARTE IZQUIERDA */
 
 aside{
     grid-area: aside;
@@ -78,7 +90,6 @@ aside{
 .apartado-izq{
     color: var(--columna);
     margin-right: 65%;
-    text-align: center;
 }
 
 .redes{
@@ -100,6 +111,8 @@ aside{
     text-decoration: none;
 }
 
+/* PARTE DERECHA */
+
 article{
     grid-area: article;
     margin: 5%;
@@ -117,7 +130,6 @@ h1{
 
 .intro{
     margin: 5%;
-    text-align: center;
 }
 
 .escuela{
