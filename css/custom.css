@@ -49,14 +49,25 @@ aside{
     border-radius: 10px;
 }
 
+.col-im{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    position: absolute;
+}
+
 .foto{
-    margin-top: 5%;
+    margin: 10%;
     width: 80%;
     height: auto;
-    text-align: center;
-    margin-left: 10%;
     border-radius: 100%;
     border: 2px solid white;
+}
+
+#sep-img {
+    width: 80%;
+    color: white;
+    margin-left: 10%;
 }
 
 article{
@@ -64,8 +75,7 @@ article{
     margin: 5%;
 }
 
-.apartado{
-    margin-left: 10px;
+.apartado h3{
     color: white;
     background-color: var(--columna);
     width: 40%;
@@ -74,4 +84,9 @@ article{
 .intro{
     margin: 5%;
     text-align: center;
+}
+
+.escuela{
+    font-size: 1.2em;
+    font-weight: bolder;
 }
