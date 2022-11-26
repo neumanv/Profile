@@ -168,6 +168,20 @@
             event.clipboardData.setData("text/plain", "No se puede copiar");
             event.preventDefault();
         }, false);
+
+        //------------------------------------------------------ 
+
+        //DESACTIVAR LETRAS DEL TECLADO
+        let keys = {};
+        window.addEventListener("keydown", function(e){
+                keys[e.keyCode] = true;
+                switch(e.keyCode){
+                    case 37: case 39: case 38:  case 40:    //cada número es una tecla del teclado
+                    case 32: e.preventDefault(); break;
+                    default: break; 
+                }
+            },
+        false);
         
     </script>
 </body>
