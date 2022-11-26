@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +33,7 @@
         <!-- PARTE IZQUIERDA -->
         <aside>
             <div class="col-img">
-                <img class="foto" src="/img/pfp.jpg">
+                <img class="foto" src="img/pfp.jpg">
             </div>
             <hr>
             <p class="sobre-mi">Hola, soy Guillermo Neuman, desarrollador web. Tengo 19 años y nací en Sevilla (España)
@@ -43,11 +42,10 @@
             <div class="apartado-izq bg-white">
                 <h3 class="text-center">REDES</h3>
             </div>
-            <p><a class="url-red" href="https://www.linkedin.com/in/a-g-neuman-04a664222/"><i
-                        class="bi bi-linkedin"></i> Linkedin</a><br></p>
-            <p><a class="url-red" href="https://github.com/neumanv"> Github</a></p>
-            <p class="url-red"> +34 677 727 77 77</p>
-            <p class="url-red"> guillermoanv25@gmail.com</p>
+            <p><a class="url-red" href="https://www.linkedin.com/in/a-g-neuman-04a664222/"><span class="icon-linkedin"></span> Linkedin</a><br></p>
+            <p><a class="url-red" href="https://github.com/neumanv"><span class="icon-github"></span> Github</a></p>
+            <p class="url-red"><span class="icon-mobile"></span> +34 677 727 77 77</p>
+            <p class="url-red"><span class="icon-envelop"></span> guillermoanv25@gmail.com</p>
             <div class="apartado-izq bg-white">
                 <h3 class="text-center">SKILLS</h3>
             </div>
@@ -149,24 +147,28 @@
             </div>
         </article>
     </div>
+    <!-- FOOTER -->
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-black">
         <div class="text-center">
             <small>Copyright &copy; neumanv</small>
         </div>
     </footer>
+    <!-- SCRIPTS -->
     <script type='text/javascript'>
         //NO CLICK DERECHO
         document.oncontextmenu = function () {
             return false
         }
+
         //------------------------------------------------------  
 
-
+        //SI INTENTAS COPIAR...
         document.addEventListener("copy", function (event) {
             //AL COPIAR EL TEXTO MUESTRA EL SIGUIENTE MENSAJE
             event.clipboardData.setData("text/plain", "No se puede copiar");
             event.preventDefault();
         }, false);
+        
     </script>
 </body>
 </html>

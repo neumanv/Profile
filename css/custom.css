@@ -144,3 +144,13 @@ h1{
     font-size: 1.2em;
     font-weight: bolder;
 }
+
+/* FORMULARIO */
+
+.container-fluid{
+    padding: 5%;
+}
+
+.dato{
+    margin-top: 20px;
+}
