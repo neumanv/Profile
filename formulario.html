@@ -8,10 +8,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icono-form.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/custom.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand ff-gen bg-secondary p-1">
@@ -23,7 +23,8 @@
                         </p>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html">Curriculum</a></li>
-                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
+                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);"
+                                    class="dropdown-item">Pantalla completa</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -32,20 +33,32 @@
     </header>
     <div class="container-fluid text-center">
         <h1>CONTACTO <span class="icon-user"></span></h1>
-        <form>
-            <p class="dato">NOMBRE: </p>
-                <input type="text" id="nombre" required><br>
-            <p class="dato">TELÉFONO: </p>
-                <input type="tel" id="tlf" required><br>
-            <p class="dato">MAIL: </p>
+        <form onsubmit="validacion()">
+            <div class="user-box">
+                <p class="dato">NOMBRE: </p>
+                <input type="text" required pattern="^[a-zA-Z]*$" id="nombre" required>
+            </div>
+            <div class="user-box">
+                <p class="dato">TELÉFONO: </p>
+                <input type="text" required pattern="^[0-9]*$" id="tlf" required>
+            </div>
+            <div class="user-box">
+                <p class="dato">MAIL: </p>
                 <input type="email" id="mail" required>
+            </div>
+            <div class="user-box">
+                <p class="dato">MOTIVO DEL CONTACTO:</p>
+                <textarea class="feedback-input" id="motivo" required></textarea>
+            </div>
+            <input type="submit" class="enviar" value="Enviar" id="btn-enviar" /></td>
         </form>
     </div>
-    <script type='text/javascript'>
+    <script type="text/javascript">
         //NO CLICK DERECHO
         document.oncontextmenu = function () {
             return false
         }
     </script>
 </body>
+
 </html>
