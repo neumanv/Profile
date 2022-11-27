@@ -10,27 +10,30 @@ function pantallaCompleta(element) {
     }
 }
 
-//------------- VALIDACIÓN FORMULARIO ------------------------------------------
+//------------- VALIDACIÓN FORMULARIO -----------------------------------------
 
 function validacion() {
+    document.getElementById("formulario").onsubmit = function(){
 
     let nombre = document.getElementById("nombre");
     let tlf = document.getElementById("tlf");
     let mail = document.getElementById("mail");
 
-    //el .length < 2 es por si es algún usuario con nombre extranjero
-    if (nombre.length < 1 || nombre.length > 20) {
-        alert("Debe de haber entre 2 y 19 caracteres en el nombre.");
+    if(nombre.length <= 4) {
+        alert("El nombre no puede tener menos 5 caracteres");
     }
-
-    if(tlf.length != 9){
+    
+    if(tlf.length !== 9){
         alert("Teléfono inválido");
     }
 
-    /*for(let i = 0; i > tlf.length; i++){
-        if(tlf[0] != "9" || tlf[0] != "6" || tlf[0] != "7"){
-            alert("El teléfono no existe.");
-        }
+    /* COMPROBAR SI LA PRIMERA SÍLABA ES 6,7 O 9
+    if(tlf.charAt(0) != "9" || tlf.charAt(0) != "6" || tlf.charAt(0) != "7"){
+        alert("El teléfono no existe.");
     }*/
+    };
 }
 
+window.onload = function(){
+    validacion();
+};

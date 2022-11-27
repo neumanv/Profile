@@ -23,35 +23,34 @@
                         </p>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html">Curriculum</a></li>
-                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);"
-                                    class="dropdown-item">Pantalla completa</a></li>
+                            <li><a id="full-screen" onclick="pantallaCompleta(document.documentElement);" class="dropdown-item">Pantalla completa</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="container-fluid text-center">
-        <h1>CONTACTO <span class="icon-user"></span></h1>
-        <form onsubmit="validacion()">
-            <div class="user-box">
-                <p class="dato">NOMBRE: </p>
-                <input type="text" required pattern="^[a-zA-Z]*$" id="nombre" required>
+    <div class="container-fluid">
+        <h1 class="text-center">CONTACTO <span class="icon-user"></span></h1>
+        <form class="formulario" id="formulario" onsubmit="validacion()">
+            <div class="form-group">
+              <label for="dato">NOMBRE:</label>
+              <input type="text" class="form-control" id="nombre" required pattern="^[a-zA-Z]*$">
             </div>
-            <div class="user-box">
-                <p class="dato">TELÉFONO: </p>
-                <input type="text" required pattern="^[0-9]*$" id="tlf" required>
+            <div class="form-group">
+              <label for="dato">TELÉFONO:</label>
+              <input type="tel" class="form-control" id="tlf" required pattern="^[0-9]*$">
             </div>
-            <div class="user-box">
-                <p class="dato">MAIL: </p>
-                <input type="email" id="mail" required>
+            <div class="form-group">
+                <label for="dato">EMAIL:</label>
+                <input type="email" class="form-control" id="mail" required>
             </div>
-            <div class="user-box">
-                <p class="dato">MOTIVO DEL CONTACTO:</p>
-                <textarea class="feedback-input" id="motivo" required></textarea>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">MOTIVO DEL CONTACTO:</label>
+                <textarea class="form-control" id="contaccto" rows="3"></textarea>
             </div>
-            <input type="submit" class="enviar" value="Enviar" id="btn-enviar" /></td>
-        </form>
+            <button class="enviar text" type="submit" class="btn btn-primary">Enviar</button>
+          </form>
     </div>
     <script type="text/javascript">
         //NO CLICK DERECHO
