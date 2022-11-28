@@ -196,4 +196,9 @@ h1{
     .apartado h3{
         width: 50%;
     }
+
+    .enviar{
+        width: 100%;
+        height: auto;
+    }
 }

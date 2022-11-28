@@ -19,6 +19,8 @@ function validacion() {
     let tlf = document.getElementById("tlf");
     let mail = document.getElementById("mail");
 
+    let email = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+
     if(nombre.length > 5) {
         alert("El nombre no puede tener más de 20 caracteres");
     
@@ -30,6 +32,12 @@ function validacion() {
     if(tlf.charAt(0) != "9" || tlf.charAt(0) != "6" || tlf.charAt(0) != "7"){
         alert("El teléfono no existe.");
     }*/
+
+    if((email.test(mail.value))){
+    }else{
+        alert("Email inválido");
+    }
+    
     };
 }
 
@@ -37,3 +45,11 @@ function validacion() {
         validacion();
     };
 }
+
+//------------- AVISO DE QUEJA -----------------------------------------
+
+function queja() {
+    
+    alert("No te quejes tanto...");
+    document.getElementById("contacto").value = "";
+  }
