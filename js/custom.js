@@ -19,11 +19,10 @@ function validacion() {
     let tlf = document.getElementById("tlf");
     let mail = document.getElementById("mail");
 
-    if(nombre.length <= 4) {
-        alert("El nombre no puede tener menos 5 caracteres");
-    }
+    if(nombre.length > 5) {
+        alert("El nombre no puede tener más de 20 caracteres");
     
-    if(tlf.length !== 9){
+    if(tlf.length < 9 && tlf.length > 9){
         alert("Teléfono inválido");
     }
 
@@ -34,6 +33,7 @@ function validacion() {
     };
 }
 
-window.onload = function(){
-    validacion();
-};
+    window.onload = function(){
+        validacion();
+    };
+}

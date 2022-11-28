@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/custom.js"></script>
+    <script defer src="js/custom.js"></script>
 </head>
 
 <body>
@@ -30,12 +30,13 @@
             </div>
         </nav>
     </header>
+    
     <div class="container-fluid">
         <h1 class="text-center">CONTACTO <span class="icon-user"></span></h1>
-        <form class="formulario" id="formulario" onsubmit="validacion()">
+        <form class="formulario" name="formulario" id="formulario" onsubmit="validacion()">
             <div class="form-group">
               <label for="dato">NOMBRE:</label>
-              <input type="text" class="form-control" id="nombre" required pattern="^[a-zA-Z]*$">
+              <input type="text" class="form-control" id="nombre" required pattern="^[a-zA-Z]*">
             </div>
             <div class="form-group">
               <label for="dato">TELÉFONO:</label>
