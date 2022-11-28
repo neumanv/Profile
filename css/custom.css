@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Varela";
-    src: url(font/VarelaRound-Regular.ttf);
+    src: url(../font/VarelaRound-Regular.ttf);
 }
 
 .bg-primary {
