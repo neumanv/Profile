@@ -1,0 +1,28 @@
+Punto 1:
+- No hay creado específicamente un apartado de idiomas porque ya lo nombro varias veces.
+
+Punto 4:
+- Los componentes usados de bootstrap son los siguientes:
+
+	+ navbar dentro del header con un desplegable 
+	+ un container que agrupa toda la estructura y que está dividido en 2 partes por un grid
+	+ carrusel automático que muestra las skills
+	+ algunas funciones extras como para colores del texto o su alineación
+	+ footer
+	+ formulario
+
+- Los iconos usados son de la libreria IcoMoon
+
+- Animación: carrousel
+
+Punto 5:
+- Eventos:
+
+	+ Poner la pantalla completa dándole a un botón
+	+ El click derecho en el ratón está desactivado
+	+ Al copiar texto, cuando lo pegas se muestra un mensaje advirtiendo que no se puede copiar 
+	+ No es posible mover la página a no ser que sea con la rueda del ratón
+	+ Al intentar poner el motivo de la queja, cada letra que escribas manda un alert y luego la borra
+
+ENLACE A GITHUB:
+- https://github.com/neumanv/Profile
